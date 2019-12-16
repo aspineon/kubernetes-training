@@ -10,7 +10,10 @@
 - Zainstalowane pakiety
     - Server SSH
     - Podstawowe narzędzia systemowe
-    
+- Uwaga pod windows należy wyłączyć Hyper-V
+```
+bcdedit /set hypervisorlaunchtype off
+```    
 ## Przygotowanie bazowej maszyny
 - Usunąć cdrom jako źródło pakietów
 ```
@@ -85,7 +88,7 @@ sudo usermod -aG docker $USER
 ```
 sudo apt-mark hold docker-ce
 ```
-- Zainstalować docker-compose https://docs.docker.com/compose/install/
+- Zainstalować docker-compose https://docs.docker.com/compose/install
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
@@ -132,6 +135,7 @@ sudo nano /etc/hosts
 10.10.10.12 node2    
 10.10.10.100 admin
 ```
+- Ustawić dns na 10.10.10.1 w /etc/resolv.conf
 - Wyłączyć dhcp na podstawowym interfejsie sieciowym
 ```
 sudo nano /etc/network/interfaces
