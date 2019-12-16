@@ -85,7 +85,7 @@ sudo usermod -aG docker $USER
 ```
 sudo apt-mark hold docker-ce
 ```
-# Instalacja klastra - wersja uproszczona
+## Instalacja klastra - wersja uproszczona
 - Sklonować maszynę bazową i nadać jej nazwę master
 - Wyłączyć swap
 ```
@@ -94,7 +94,7 @@ swapoff -a
 ```
 sed -i '/ swap / s/^/#/' /etc/fstab
 ```
-- Zainstalować kubeadm
+- Zainstalować kubeadm https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm
 ```
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 ```
