@@ -2,10 +2,10 @@
 - Nazwa hosta
     - debian
 - Użytkownicy
-    - nazwa: root, hasło: root
+    - nazwa: k8s, hasło: k8s
     - nazwa: administrator, hasło: administrator
 - Karty sieciowe
-    - 10.10.10.0/24 (Virtual NAT)
+    - 192.168.1.0/24 (Virtual NAT)
     - 192.168.56.0/24 (host-only)
 - Zainstalowane pakiety
     - Server SSH
@@ -24,11 +24,11 @@ nano /etc/apt/sources.list
 apt update 
 ```
 ```
-apt install sudo vim net-tools
+apt install sudo net-tools
 ```
-- Dodać użytkownika administrator do grupy super użytkowników
+- Dodać użytkownika k8s do grupy super użytkowników
 ```
-usermod -aG sudo administrator
+usermod -aG sudo k8s
 ```
 - Jeśli trzeba dodać i podnieść drugi interfejs sieciowy (enp0s8) 
 ```
@@ -130,12 +130,12 @@ sudo apt-mark hold kubelet kubeadm kubectl
 sudo nano /etc/hosts
 ```
 ```
-10.10.10.10 master    
-10.10.10.11 node1    
-10.10.10.12 node2    
-10.10.10.100 admin
+192.168.1.10 master    
+192.168.1.11 node1    
+192.168.1.12 node2    
+192.168.1.100 admin
 ```
-- Ustawić dns na 10.10.10.1 w /etc/resolv.conf
+- Ustawić dns na 192.168.1.1 w /etc/resolv.conf
 - Wyłączyć dhcp na podstawowym interfejsie sieciowym
 ```
 sudo nano /etc/network/interfaces
@@ -146,9 +146,9 @@ sudo nano /etc/network/interfaces
 - Ustawić adres ip dla pierwszej maszyny (master)
 ```
 iface enp0s3 inet static
-      address 10.10.10.10
+      address 192.168.1.10
       netmask 255.255.255.0
-      gateway 10.10.10.1
+      gateway 192.168.1.1
 ```
 - Ustawić nazwę hosta dla pierwszej maszyny (master)
 ```
@@ -197,7 +197,7 @@ sudo apt-get install -y kubectl
 mkdir ~/.kube
 ```
 ```
-scp root@10.10.10.10:/etc/kubernetes/admin.conf ~/.kube/local
+scp root@192.168.1.10:/etc/kubernetes/admin.conf ~/.kube/local
 ```
 ```
 echo export KUBECONFIG=~/.kube/local >> ~/.bash_profile

@@ -5,20 +5,13 @@ metadata:
 spec:
   parallelism: 2
   completions: 3
-  selector:
-    #matchLabels:
-    #  app-name: echo-server
-    matchExpressions:
-      - key: app-name
-        operator: In  # (In, Notin, Exists)
-        values:
-          - long-task
+  ttlSecondsAfterFinished: 300
+  activeDeadlineSeconds: 3600
   template:
     spec:
+      restartPolicy: OnFailure
       containers:
         - name: long-task
           image: landrzejewski/long-task:v1
-          ports:
-            - containerPort: 8080
 
 
