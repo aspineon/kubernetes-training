@@ -136,6 +136,10 @@ sudo nano /etc/hosts
 192.168.1.100 admin
 ```
 - Ustawić dns na 192.168.1.1 w /etc/resolv.conf
+- Skonfigurować ip tables (pass bridged IPv4 traffic to iptables’ chains)
+```
+sysctl net.bridge.bridge-nf-call-iptables=1
+```
 - Wyłączyć dhcp na podstawowym interfejsie sieciowym
 ```
 sudo nano /etc/network/interfaces
