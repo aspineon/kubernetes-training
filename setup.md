@@ -138,19 +138,19 @@ sudo nano /etc/hosts
 - Ustawić dns na 192.168.1.1 w /etc/resolv.conf
 - Skonfigurować ip tables
 ```
-sysctl net.bridge.bridge-nf-call-iptables=1
+sudo sysctl net.bridge.bridge-nf-call-iptables=1
 ```
 ```
-update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 ```
 ```
-update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 ```
 ```
-update-alternatives --set arptables /usr/sbin/arptables-legacy
+sudo update-alternatives --set arptables /usr/sbin/arptables-legacy
 ```
 ```
-update-alternatives --set ebtables /usr/sbin/ebtables-legacy
+sudo update-alternatives --set ebtables /usr/sbin/ebtables-legacy
 ```
 - Wyłączyć dhcp na podstawowym interfejsie sieciowym
 ```
@@ -170,9 +170,9 @@ iface enp0s3 inet static
 ```
 sudo hostnamectl set-hostname master
 ```
-- Zrestartować maszynę
+- Wyłączyć maszynę
 ```
-sudo shutdown -r now
+sudo shutdown -h now
 ```
 - Sklonować maszynę 2 razy i zmienić adresy oraz nazwy odpowiednio dla node1 i node2
 - Zainicjalizować klaster (master)
@@ -191,7 +191,7 @@ nano /etc/ssh/sshd_config  (ustawić PermitRootLogin yes)
 ```
 /etc/init.d/ssh restart
 ```
-- Sklonować maszynę testową i utworzyć stację administracyjną
+- Sklonować maszynę bazową i utworzyć stację administracyjną
 ```
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 ```
@@ -218,12 +218,16 @@ scp root@192.168.1.10:/etc/kubernetes/admin.conf ~/.kube/local
 ```
 echo export KUBECONFIG=~/.kube/local >> ~/.bash_profile
 ```
+```
+source .bash_profie
+```
 - Skonfigurować bash completion
 ```
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
+- Dodać bash_completion do .bashrc
 ```
-echo if [ -f "$HOME/.bashrc" ]; then . "$HOME/.bashrc" fi
+echo ". /etc/bash_completion" >> ~/.bashrc
 ```
 ```
 source .bashrc
