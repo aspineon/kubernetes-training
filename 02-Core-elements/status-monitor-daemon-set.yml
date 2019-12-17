@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+   name: status-monitor-daemon-set
+spec:
+  selector:
+    #matchLabels:
+    #  app-name: echo-server
+    matchExpressions:
+      - key: app-name
+        operator: In  # (In, Notin, Exists)
+        values:
+          - status-monitor
+  template:
+    metadata:
+      labels:
+        app-name: status-monitor
+    spec:
+      containers:
+        - name: long-task
+          image: landrzejewski/status-monitor:v1
+
+

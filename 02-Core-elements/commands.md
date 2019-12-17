@@ -10,14 +10,14 @@ kubectl create -f echo-server-pod.yaml
 ```
 - Pobranie konfiguracji w formacie json/yaml
 ```
-kubectl get po echo-server-pod -o ymal
+kubectl get po echo-server-pod -o yaml
 ```
 ```
 kubectl describe echo-server-pod
 ```
 - Wyświetlenie logów
 ```
-kubectl logs echo-server-pod [-c $CONTINER_NAME]
+kubectl logs echo-server-pod [-c $CONTAINER_NAME]
 ```
 - Forward portów
 ```
@@ -52,7 +52,7 @@ kubectl get pods -l 'env in (production,development)'
 kubectl get pods -l 'env notin (production,development)'
 ```
 ```
-kubectl get pods -l 'env=production,version=2
+kubectl get pods -l 'env=production,version=2'
 ```
 - Dodanie etykiety
 ```

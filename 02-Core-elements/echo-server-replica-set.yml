@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+   name: echo-server-replica-set
+spec:
+  replicas: 5
+  selector:
+    #matchLabels:
+    #  app-name: echo-server
+    matchExpressions:
+      - key: app-name
+        operator: In  # (In, Notin, Exists)
+        values:
+          - echo-server
+  template:
+    metadata:
+      labels:
+        app-name: echo-server
+    spec:
+      containers:
+        - name: echo-server
+          image: landrzejewski/echo-server:v1
+          ports:
+            - containerPort: 8080
+
+

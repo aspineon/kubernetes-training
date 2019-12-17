@@ -72,7 +72,7 @@ docker stop $(docker ps -q)
 ```
 - Usunięcie wszystkich kontenerów
 ```
-docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 ```
 ## Podstawy docker-compose
 - Uruchomienie wszystkich usług

@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+   name: long-task-job
+spec:
+  parallelism: 2
+  completions: 3
+  selector:
+    #matchLabels:
+    #  app-name: echo-server
+    matchExpressions:
+      - key: app-name
+        operator: In  # (In, Notin, Exists)
+        values:
+          - long-task
+  template:
+    spec:
+      containers:
+        - name: long-task
+          image: landrzejewski/long-task:v1
+          ports:
+            - containerPort: 8080
+
+
