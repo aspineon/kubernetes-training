@@ -218,7 +218,7 @@ scp root@192.168.1.10:/etc/kubernetes/admin.conf ~/.kube/local
 ```
 echo export KUBECONFIG=~/.kube/local >> ~/.bash_profile
 ```
-- Dodać ładowanie .bashrc w .bash_profie
+- Dodać ładowanie .bashrc w .bash_profile
 ```
 if [ -f "$HOME/.bashrc" ]; then
    . "$HOME/.bashrc"
@@ -229,5 +229,5 @@ fi
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
 ```
-source .bash_profie
+source .bash_profile
 ```
