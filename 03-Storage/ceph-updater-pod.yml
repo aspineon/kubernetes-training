@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: updater-pod
+spec:
+  containers:
+    - name: web-server
+      image: nginx:1.17.3-alpine
+      ports:
+        - containerPort: 80
+      volumeMounts:
+        - name: storage
+          mountPath: /usr/share/nginx/html
+    - name: updater-app
+      image: landrzejewski/updater:v1
+      volumeMounts:
+        - name: storage
+          mountPath: /var/htdocs
+  volumes:
+    - name: storage
+      persistentVolumeClaim:
+        claimName: training-claim

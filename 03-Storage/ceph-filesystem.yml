@@ -6,10 +6,10 @@ metadata:
 spec:
   metadataPool:
     replicated:
-      size: 3
+      size: 1
   dataPools:
     - replicated:
-        size: 3
+        size: 1
   metadataServer:
     activeCount: 1
     activeStandby: true
