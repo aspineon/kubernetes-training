@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: echo-server-service-with-node-port
+spec:
+  type: NodePort
+  #externalTrafficPolicy: Local  # uwaga nie zadziała jeśli nie będzie lokalnie podów
+  selector:
+    app-name: echo-server
+  ports:
+    - port: 80
+      targetPort: http
+      nodePort: 30000

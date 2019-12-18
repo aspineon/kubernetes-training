@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: echo-server-service-with-load-balancer
+spec:
+  type: LoadBalancer
+  selector:
+    app-name: echo-server
+  ports:
+    - port: 80
+      targetPort: http
+      nodePort: 30000

@@ -111,3 +111,31 @@ kubectl delete pods --all
 ```
 kubectl delete all --all
 ```
+## MetalLB
+```
+kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml
+```
+```
+kubectl create -f metallb-config-map.yml
+```
+## Ingress
+```
+https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+(Ustawić typ serwisu) kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/baremetal/service-nodeport.yaml
+kubectl get pods --all-namespaces -l app.kubernetes.io/name=ingress-nginx --watch
+kubectl get service ingress-nginx --namespace=ingress-nginx
+curl https://192.168.1.241/echo -k
+
+### Dashboard ###
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta1/aio/deploy/recommended.yaml
+kubectl create serviceaccount cluster-admin-dashboard-sa
+kubectl create clusterrolebinding cluster-admin-dashboard-sa \
+  --clusterrole=cluster-admin \
+  --serviceaccount=default:cluster-admin-dashboard-sa
+kubectl get secret | grep cluster-admin-dashboard-sa
+kubectl describe secret $SECRET_NAME
+kubectl proxy --address=0.0.0.0 (add port forward host to admin)
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.
