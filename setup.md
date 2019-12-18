@@ -218,17 +218,16 @@ scp root@192.168.1.10:/etc/kubernetes/admin.conf ~/.kube/local
 ```
 echo export KUBECONFIG=~/.kube/local >> ~/.bash_profile
 ```
+- Dodać ładowanie .bashrc w .bash_profie
 ```
-source .bash_profie
+if [ -f "$HOME/.bashrc" ]; then
+   . "$HOME/.bashrc"
+fi
 ```
 - Skonfigurować bash completion
 ```
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
-- Dodać bash_completion do .bashrc
 ```
-echo ". /etc/bash_completion" >> ~/.bashrc
-```
-```
-source .bashrc
+source .bash_profie
 ```
