@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: share-persitent-volume-1
+  labels:
+    share: primary
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/share-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: share-persitent-volume-2
+  labels:
+    share: primary
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/share-2
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: share-persitent-volume-3
+  labels:
+    share: secondary
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/share-3
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: share-persitent-volume-claim-3
+spec:
+  selector:
+    matchLabels:
+      share: secondary
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: updater-pod
+spec:
+  containers:
+    - name: web-server
+      image: nginx:1.17.3-alpine
+      ports:
+        - containerPort: 80
+      volumeMounts:
+        - name: storage
+          mountPath: /usr/share/nginx/html
+    - name: updater-app
+      image: landrzejewski/updater:v1
+      volumeMounts:
+        - name: storage
+          mountPath: /var/htdocs
+  volumes:
+    - name: storage
+      persistentVolumeClaim:
+        claimName: share-persitent-volume-claim
