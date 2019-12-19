@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: update-config-map
+  name: updater-config-map
 data:
   INTERVAL: '20'
   sleepInterval: '15'

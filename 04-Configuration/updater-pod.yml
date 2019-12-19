@@ -15,14 +15,29 @@ spec:
       image: landrzejewski/updater:v2
       #args:
       #  - '10'
-      env:
-        - name: INTERVAL
-          value: 3
+      # env:
+      #  - name: INTERVAL
+      #    value: '3'
+
+      #  - name: INTERVAL
+      #    valueFrom:
+      #      configMapKeyRef:
+      #        key: sleepInterval
+      #        name: updater-config-map
+
+      envFrom:
+        - configMapRef:
+            name: updater-config-map
 
       volumeMounts:
         - name: storage
           mountPath: /var/htdocs
+        - name: config
+          mountPath: /var/config
   volumes:
     - name: storage
       emptyDir:
         medium: Memory
+    - name: config
+      configMap:
+        name: updater-config-map
