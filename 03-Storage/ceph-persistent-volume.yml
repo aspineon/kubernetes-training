@@ -14,4 +14,4 @@ spec:
     options:
       fsName: training-fs
       clusterNamespace: rook-ceph
-      ##path: /training
+      path: /training-pv
