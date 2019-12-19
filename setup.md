@@ -231,3 +231,6 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
 source .bash_profile
 ```
+```
+journalctl -u kubelet --no-pager|less
+```

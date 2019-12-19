@@ -22,3 +22,6 @@ RestAPI
 
 cluster HA
     https://files.mycloud.com/home.php?brand=webfiles&seuuid=98926eb82818afd7c0b10907c9b6ae11&name=k8s-ha-cluster_4
+
+
+https://kubernetes.io/docs/tutorials/stateless-application/guestbook/
