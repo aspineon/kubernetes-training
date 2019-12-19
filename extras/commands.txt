@@ -34,3 +34,4 @@ https://www.manning.com/books/kubernetes-in-action
 https://www.manning.com/books/istio-in-action
 https://helion.pl/ksiazki/kubernetes-up-and-running-dive-into-the-future-of-infrastructure-2nd-edition-brendan-burns-joe-beda-kelsey-hightower,e_1bzr.htm
 
+https://www.icloud.com/iclouddrive/0GpIr5EbGvjRkSshDmgCV_n0Q#kubernetes
