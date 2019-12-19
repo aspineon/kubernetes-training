@@ -26,6 +26,8 @@ spec:
       #        name: updater-config-map
 
       envFrom:
+        - secretRef:
+            name: updater-secret
         - configMapRef:
             name: updater-config-map
 
