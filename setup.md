@@ -231,6 +231,7 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 ```
 source .bash_profile
 ```
+- Wyświetlenie wszystkich logów na Master
 ```
 journalctl -u kubelet --no-pager|less
 ```

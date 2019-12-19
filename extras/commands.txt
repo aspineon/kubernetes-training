@@ -25,3 +25,12 @@ cluster HA
 
 
 https://kubernetes.io/docs/tutorials/stateless-application/guestbook/
+https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/
+
+Book:
+https://www.manning.com/books/docker-in-practice-second-edition
+https://www.manning.com/books/docker-in-action-second-edition
+https://www.manning.com/books/kubernetes-in-action
+https://www.manning.com/books/istio-in-action
+https://helion.pl/ksiazki/kubernetes-up-and-running-dive-into-the-future-of-infrastructure-2nd-edition-brendan-burns-joe-beda-kelsey-hightower,e_1bzr.htm
+
