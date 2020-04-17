@@ -58,6 +58,13 @@ spec:
           envFrom:
             - configMapRef:
                 name: camel-config
+          volumeMounts:
+            - mountPath: /source
+              name: storage
+      volumes:
+        - name: storage
+          persistentVolumeClaim:
+            claimName: volume-claim-1
 ---
 apiVersion: v1
 kind: Service
