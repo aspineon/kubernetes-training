@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: orders
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app-name: orders
+  template:
+    metadata:
+      labels:
+        app-name: orders
+    spec:
+      containers:
+        - name: ordres-container
+          image: landrzejewski/orders
+          ports:
+            - containerPort: 8080
+              name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orders-service
+spec:
+  selector:
+    app-name: orders
+  ports:
+    - port: 80
+      targetPort: http

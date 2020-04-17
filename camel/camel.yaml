@@ -1,0 +1,73 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: camel-config
+data:
+  FILES_PATH: /source
+  ORDERS_SERVICE: orders-service
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-1
+  labels:
+    share: primary
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/share-1
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: volume-claim-1
+spec:
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: camel
+spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 2
+  replicas: 2
+  selector:
+    matchLabels:
+      app-name: camel
+  template:
+    metadata:
+      labels:
+        app-name: camel
+    spec:
+      containers:
+        - name: camel
+          image: landrzejewski/camel
+          ports:
+            - containerPort: 8081
+              name: http
+          envFrom:
+            - configMapRef:
+                name: camel-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: camel-service
+spec:
+  type: LoadBalancer
+  selector:
+    app-name: camel
+  ports:
+    - port: 80
+      targetPort: http
+      nodePort: 30000
