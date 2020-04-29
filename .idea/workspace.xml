@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c91cd4-24ab-403d-a970-421c77b0e3f8" name="Default Changelist" comment="compose">
-      <change afterPath="$PROJECT_DIR$/camel/camel.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/camel/orders.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,15 +29,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/02-Core-elements" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/06-Istio" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06-Istio" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06-Istio" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/02-Core-elements" />
       <recent name="$PROJECT_DIR$/Images" />
       <recent name="$PROJECT_DIR$/01-Docker" />
-      <recent name="$PROJECT_DIR$/Images/echo-server" />
     </key>
   </component>
   <component name="TaskManager">
@@ -52,6 +55,10 @@
       <workItem from="1587034721956" duration="6351000" />
       <workItem from="1587098092079" duration="734000" />
       <workItem from="1587103473451" duration="8404000" />
+      <workItem from="1588056531375" duration="634000" />
+      <workItem from="1588103042877" duration="3017000" />
+      <workItem from="1588109237774" duration="314000" />
+      <workItem from="1588137083086" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <created>1576493064540</created>
@@ -95,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576584673409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="compose">
+      <created>1588137129056</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588137129056</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,41 +120,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="compose" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="525" y="173" key="#Deployment" timestamp="1576503688853">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="460" y="184" key="#Deployment" timestamp="1588103113562">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="525" y="173" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1576503688853" />
-    <state x="424" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576491957807">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="460" y="184" key="#Deployment/0.0.1920.1200@0.0.1920.1200" timestamp="1588103113562" />
+    <state x="440" y="167" key="#SSH_Configurations" timestamp="1588103108979">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="424" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576491957807" />
-    <state x="505" y="73" key="CommitChangelistDialog2" timestamp="1576584673240">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="440" y="167" key="#SSH_Configurations/0.0.1920.1200@0.0.1920.1200" timestamp="1588103108979" />
+    <state x="436" y="96" key="CommitChangelistDialog2" timestamp="1588137128702">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="505" y="73" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576584673240" />
-    <state x="100" y="100" width="1720" height="880" key="DirDiffDialog" timestamp="1576505988375">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137128702" />
+    <state x="460" y="277" key="Vcs.Push.Dialog.v2" timestamp="1588137130964">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="100" y="100" width="1720" height="880" key="DirDiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576505988375" />
-    <state x="469" y="179" key="SettingsEditor" timestamp="1576565648626">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1576565648626" />
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2" timestamp="1576584674550">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="460" y="217" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1576584674550" />
-    <state x="797" y="432" key="WebDeployment.AddServerDialog.v.1" timestamp="1576490259784">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="797" y="432" key="WebDeployment.AddServerDialog.v.1/0.0.1920.1080@0.0.1920.1080" timestamp="1576490259784" />
-    <state x="911" y="266" key="ftp.server.browser" timestamp="1576503652198">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="911" y="266" key="ftp.server.browser/0.0.1920.1080@0.0.1920.1080" timestamp="1576503652198" />
-    <state x="541" y="48" width="838" height="1032" key="search.everywhere.popup" timestamp="1576512006899">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="541" y="48" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576512006899" />
+    <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137130964" />
   </component>
 </project>
