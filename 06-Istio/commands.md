@@ -9,5 +9,4 @@ kubectl port-forward webapp-7fcc98f6d5-msbq2 8080:80 --address=0.0.0.0
 kubectl port-forward kiali-76f556db6d-7k4g8 8080:20001 --address=0.0.0.0 -n=istio-system 
 kubectl port-forward istio-tracing-8584b4d7f9-27n5h 8080:16686 --address=0.0.0.0 -n=istio-system
 ```
-Zmiana w linii 268
 
