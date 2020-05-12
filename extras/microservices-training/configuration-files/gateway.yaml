@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: identity
+          uri: lb://IDENTITY-SERVICE
+          predicates:
+            - Path=/api/identity
+          filters:
+            - RewritePath=/api/identity/(?<identity>.*), /$\{identity}
+        - id: orders
+          uri: lb://PRODUCTS-SERVICE
+          predicates:
+            - Path=/api/products
+          filters:
+            - RewritePath=/api/(?<products>.*), /$\{products}
+        - id: payments
+          uri: lb://PAYMENTS-SERVICE
+          predicates:
+            - Path=/api/payments
+          filters:
+            - RewritePath=/api/(?<payments>.*), /$\{payments}
+        - id: orders
+          uri: lb://ORDERS-SERVICE
+          predicates:
+            - Path=/api/orders
+          filters:
+            - RewritePath=/api/(?<orders>.*), /$\{orders}

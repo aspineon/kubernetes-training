@@ -1,0 +1,20 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  boot:
+    admin:
+      client:
+        url: http://localhost:8090
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://localhost:8091
+management:
+  endpoints:
+    web:
+      exposure:
+        include:  '*' # only for training
+hystrix:
+  shareSecurityContext: true
+jwtSigningKey: "{cipher}da018ec409b1102b6efe01f6bf72cb5fd63dd97f19e8e03c1c208835f68b611a"

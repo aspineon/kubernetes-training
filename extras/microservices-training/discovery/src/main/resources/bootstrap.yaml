@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: discovery
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #label: maste
+encrypt:
+  key: SYMMETRICKEY

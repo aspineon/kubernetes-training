@@ -2,8 +2,186 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c91cd4-24ab-403d-a970-421c77b0e3f8" name="Default Changelist" comment="compose">
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/src/main/java/pl/training/microservices/admin/AdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/admin/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/books.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/application-development.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/application-production.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/discovery.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/gateway.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/identity-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/orders-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/payments-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/products-service-production.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/products-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration-files/zipkin.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/src/main/java/pl/training/microservices/configuration/ConfigurationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/configuration/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/src/main/java/pl/training/microservices/discovery/DiscoveryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/discovery/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/src/main/java/pl/training/microservices/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/gateway/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/IdentityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/OAuthConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/ResourceServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UriBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UserTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UsersConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/UsersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/java/pl/training/microservices/identity/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/identity/src/test/java/pl/training/microservices/identity/IdentityApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders-api/src/main/java/pl/training/microservices/orders/api/ExceptionTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders-api/src/main/java/pl/training/microservices/orders/api/OrderTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders-api/src/main/java/pl/training/microservices/orders/api/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders-api/src/main/java/pl/training/microservices/orders/api/ProductTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/FeignAuthorizationTokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/OrdersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/OrdersConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/OrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/OrdersFeeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/OrdersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/OrdersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/ResourceServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/UriBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/payments/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/payments/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/payments/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/payments/PaymentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/java/pl/training/microservices/orders/payments/PaymentsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/orders/src/main/resources/messages_pl_PL.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments-api/src/main/java/pl/training/microservices/payments/api/CreditCardTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments-api/src/main/java/pl/training/microservices/payments/api/PaymentStatusTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments-api/src/main/java/pl/training/microservices/payments/api/PaymentTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments-api/src/main/java/pl/training/microservices/payments/api/Payments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments-api/src/main/java/pl/training/microservices/payments/api/PaymentsRequestTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/NotifyPaymentStatusChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentStatusChangeNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/PaymentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/ResourceServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/java/pl/training/microservices/payments/WebSecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/payments/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products-api/src/main/java/pl/training/microservices/products/api/ProductTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products-api/src/main/java/pl/training/microservices/products/api/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products-api/src/main/java/pl/training/microservices/products/api/ResultPageTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ProductsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ProductsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ProductsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ProductsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ProductsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ProductsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/ResultPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/java/pl/training/microservices/products/UriBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/products/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/rest.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/src/main/java/pl/training/microservices/zipkin/ZipkinApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/zipkin/src/main/resources/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extras/cloud/cloud.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extras/cloud/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.md" beforeDir="false" afterPath="$PROJECT_DIR$/setup.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +198,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -29,19 +208,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/06-Istio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extras/microservices-training" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/06-Istio" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extras/microservices-training" />
       <recent name="$PROJECT_DIR$/06-Istio" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/02-Core-elements" />
       <recent name="$PROJECT_DIR$/Images" />
-      <recent name="$PROJECT_DIR$/01-Docker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06-Istio" />
     </key>
   </component>
   <component name="TaskManager">
@@ -59,6 +238,7 @@
       <workItem from="1588103042877" duration="3017000" />
       <workItem from="1588109237774" duration="314000" />
       <workItem from="1588137083086" duration="57000" />
+      <workItem from="1589249200862" duration="3367000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <created>1576493064540</created>
@@ -120,10 +300,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="compose" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="184" key="#Deployment" timestamp="1588103113562">
+    <state x="460" y="184" key="#Deployment" timestamp="1589250393237">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="460" y="184" key="#Deployment/0.0.1920.1200@0.0.1920.1200" timestamp="1588103113562" />
+    <state x="460" y="184" key="#Deployment/0.0.1920.1200@0.0.1920.1200" timestamp="1589250393237" />
     <state x="440" y="167" key="#SSH_Configurations" timestamp="1588103108979">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>

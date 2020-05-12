@@ -1,0 +1,11 @@
+server:
+  port: 9002
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: payments-topic
+          content-type: application/json
+          groups: orders
+broker-fee: "{cipher}aae507a85c0fd094eff81e5a996a3733e80b8ffabddf2428e63692deb0ab65c8"

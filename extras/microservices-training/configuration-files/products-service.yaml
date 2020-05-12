@@ -1,0 +1,10 @@
+server:
+  port: 9001
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: payments-topic
+          content-type: application/json
+          groups: orders

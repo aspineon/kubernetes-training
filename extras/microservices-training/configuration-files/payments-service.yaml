@@ -1,0 +1,9 @@
+server:
+  port: 9003
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: payments-topic
+          content-type: application/json

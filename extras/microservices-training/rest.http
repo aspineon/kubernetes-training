@@ -1,0 +1,91 @@
+POST http://localhost:8080/api/payments
+Accept: application/json
+Content-Type: application/json
+
+{
+  "amount": 1000,
+  "creditCard": {
+    "number": "1234567789",
+    "cvv": 645,
+    "expirationDate": "2029-12-10T12:00:00"
+  }
+}
+
+###
+
+POST http://localhost:8080/api/orders
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODgyOTE1MDUsInVzZXJfbmFtZSI6ImphbiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI3ZDllYjI5OS01ODQ4LTRlYTAtOTFiMi0xNWM3OTg4OTJiOWUiLCJjbGllbnRfaWQiOiJ0cmFpbmluZyIsInNjb3BlIjpbImFwaSJdfQ.ENozEwBBPnArOHT6DAAbr7Sl1KA_2laU7jWgGFJjSjA
+
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Microservices in practice (e-book)"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:8080/api/products
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Microservices in practice (e-book)",
+  "description": "Book",
+  "price": 200
+}
+
+###
+
+GET http://localhost:8080/api/products?nameFragment=Micro
+Accept: application/json
+Content-Type: application/json
+
+###
+
+POST http://localhost:8888/monitor
+Content-Type: application/x-www-form-urlencoded
+
+path=orders-service
+
+###
+
+POST http://localhost:8888/encrypt
+
+spring
+
+###
+
+POST http://localhost:8888/decrypt
+
+aae507a85c0fd094eff81e5a996a3733e80b8ffabddf2428e63692deb0ab65c8
+
+###
+
+POST http://localhost:9004/users
+Content-Type: application/json
+
+{
+  "firstName": "Jan",
+  "lastName": "Kowalski",
+  "username": "jan",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:9004/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+username=jan&password=123&client_id=training&grant_type=password
+
+###
+
+GET http://localhost:9004/users/active
+Content-Type: application/json
+Accept: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODgyODczNTUsInVzZXJfbmFtZSI6ImphbiIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJqdGkiOiI2N2YzYmQ4OC02MjcwLTRlNjYtOTczOS1lZDZjODgzYjFiOWUiLCJjbGllbnRfaWQiOiJ0cmFpbmluZyIsInNjb3BlIjpbImFwaSJdfQ.H4OJ4ILeBcrp7MCcv97RWtGZsf_5f2X0BuVe12ZRxBI

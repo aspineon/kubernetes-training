@@ -235,3 +235,14 @@ source .bash_profile
 ```
 journalctl -u kubelet --no-pager|less
 ```
+- Opcjonalna wymiana certyfikatu jeśli nie użyliśmy --apiserver-cert-extra-sans
+```
+rm /etc/kubernetes/pki/apiserver.*
+kubeadm phase certs all --apiserver-advertise-address=0.0.0.0 --apiserver-cert-extra-sans=x.x.x.x,x.x.x.x
+docker rm -f `docker ps -q -f 'name=k8s_kube-apiserver*'`
+systemctl restart kubelet
+```
+- Opcjonalnie wyświetlenie tokenów```
+```
+kubeadm token list
+```

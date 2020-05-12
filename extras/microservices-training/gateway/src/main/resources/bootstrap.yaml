@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #label: master
+encrypt:
+  key: SYMMETRICKEY

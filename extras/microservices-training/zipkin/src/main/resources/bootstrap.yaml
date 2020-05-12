@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: zipkin
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #label: master
+  main:
+    web-application-type: none
+encrypt:
+  key: SYMMETRICKEY
