@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c91cd4-24ab-403d-a970-421c77b0e3f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/extras/microservices-training/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-Core-elements/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-Core-elements/commands.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,19 +33,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/extras/microservices-training" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extras/microservices-training/.mvn/wrapper" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06-Istio" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extras/microservices-training/.mvn/wrapper" />
       <recent name="$PROJECT_DIR$/extras/microservices-training" />
       <recent name="$PROJECT_DIR$/06-Istio" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/02-Core-elements" />
-      <recent name="$PROJECT_DIR$/Images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/06-Istio" />
     </key>
   </component>
   <component name="TaskManager">
@@ -60,7 +64,9 @@
       <workItem from="1588109237774" duration="314000" />
       <workItem from="1588137083086" duration="57000" />
       <workItem from="1589249200862" duration="3367000" />
-      <workItem from="1589263779844" duration="2111000" />
+      <workItem from="1589263779844" duration="9720000" />
+      <workItem from="1589290832328" duration="206000" />
+      <workItem from="1589291042099" duration="2680000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <created>1576493064540</created>
@@ -118,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589263807551</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="compose">
+      <created>1589278518280</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589278518280</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,27 +142,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="compose" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="184" key="#Deployment" timestamp="1589250393237">
+    <state x="460" y="184" key="#Deployment" timestamp="1589290959093">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state x="460" y="184" key="#Deployment/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589290959093" />
     <state x="460" y="184" key="#Deployment/0.0.1920.1200@0.0.1920.1200" timestamp="1589250393237" />
-    <state x="440" y="167" key="#SSH_Configurations" timestamp="1588103108979">
+    <state x="440" y="167" key="#SSH_Configurations" timestamp="1589279443798">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state x="440" y="167" key="#SSH_Configurations/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589279443798" />
     <state x="440" y="167" key="#SSH_Configurations/0.0.1920.1200@0.0.1920.1200" timestamp="1588103108979" />
-    <state x="436" y="96" key="CommitChangelistDialog2" timestamp="1589263807187">
+    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589293389273">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589263807187" />
+    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589293389273" />
+    <state x="436" y="96" key="CommitChangelistDialog2" timestamp="1589278518099">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589278518099" />
     <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137128702" />
     <state x="344" y="151" key="SettingsEditor" timestamp="1589274458752">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="344" y="151" key="SettingsEditor/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589274458752" />
-    <state x="460" y="277" key="Vcs.Push.Dialog.v2" timestamp="1589263832683">
+    <state x="460" y="277" key="Vcs.Push.Dialog.v2" timestamp="1589278519895">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589263832683" />
+    <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589278519895" />
     <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137130964" />
+    <state x="696" y="502" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589279145868">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="696" y="502" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589279145868" />
+    <state x="820" y="477" key="publish.login" timestamp="1589291050595">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="820" y="477" key="publish.login/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589291050595" />
+    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup" timestamp="1589285964215">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589285964215" />
   </component>
 </project>

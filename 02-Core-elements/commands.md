@@ -21,7 +21,7 @@ kubectl logs echo-server-pod [-c $CONTAINER_NAME]
 ```
 - Forward portów
 ```
-kubectl port-forward echo-server-pod 8888:8080
+kubectl port-forward echo-server-pod 8888:8080 
 ```
 - Wykonanie polecenia na kontenerze / pod
 ```
