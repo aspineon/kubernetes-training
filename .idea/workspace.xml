@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c91cd4-24ab-403d-a970-421c77b0e3f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/configuration-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/configuration-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/global-config-map.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/ingress.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/kafka-deploymnet.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/kafka-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/products-config-map.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/products-database-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/products-database-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/products-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/products-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/products-volume-claim.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/site-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/site-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/volumes.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/zookeeper-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extras/deployment/zookeeper-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extras/deployment/products-config-map.yml" beforeDir="false" afterPath="$PROJECT_DIR$/extras/deployment/products-config-map.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extras/microservices-training/products/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/extras/microservices-training/products/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +61,61 @@
       <recent name="$PROJECT_DIR$/02-Core-elements" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.rest#4">
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:9001/products" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Microservices in practice (e-book)&quot;,&#10;  &quot;description&quot;: &quot;Book&quot;,&#10;  &quot;price&quot;: 200&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9001/products" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="nameFragment" />
+                <option name="value" value="Micro" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.rest#3">
     <configuration name="rest#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/extras/microservices-training/rest.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -56,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.rest#4" />
         <item itemvalue="HTTP Request.rest#3" />
+        <item itemvalue="HTTP Request.rest#4" />
       </list>
     </recent_temporary>
   </component>
@@ -80,7 +148,7 @@
       <workItem from="1589263779844" duration="9720000" />
       <workItem from="1589290832328" duration="206000" />
       <workItem from="1589291042099" duration="2837000" />
-      <workItem from="1589326251037" duration="9356000" />
+      <workItem from="1589326251037" duration="22447000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <created>1576493064540</created>
@@ -180,7 +248,28 @@
       <option name="project" value="LOCAL" />
       <updated>1589360374397</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="compose">
+      <created>1589361315013</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589361315013</updated>
+    </task>
+    <task id="LOCAL-00016" summary="compose">
+      <created>1589377277891</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589377277891</updated>
+    </task>
+    <task id="LOCAL-00017" summary="compose">
+      <created>1589378042984</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589378042984</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,35 +295,35 @@
     </state>
     <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589293389273" />
     <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.23.1366.745@0.0.1920.1200" timestamp="1589356296884" />
-    <state x="346" y="25" key="CommitChangelistDialog2" timestamp="1589360374209">
+    <state x="346" y="25" key="CommitChangelistDialog2" timestamp="1589378042774">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="346" y="25" key="CommitChangelistDialog2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589360374209" />
+    <state x="346" y="25" key="CommitChangelistDialog2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589378042774" />
     <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137128702" />
-    <state width="1868" height="331" key="GridCell.Tab.0.bottom" timestamp="1589361163385">
+    <state width="1868" height="331" key="GridCell.Tab.0.bottom" timestamp="1589366385067">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1868" height="331" key="GridCell.Tab.0.bottom/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589361163385" />
-    <state width="1868" height="331" key="GridCell.Tab.0.center" timestamp="1589361163383">
+    <state width="1868" height="331" key="GridCell.Tab.0.bottom/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385067" />
+    <state width="1868" height="331" key="GridCell.Tab.0.center" timestamp="1589366385065">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1868" height="331" key="GridCell.Tab.0.center/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589361163383" />
-    <state width="1868" height="331" key="GridCell.Tab.0.left" timestamp="1589361163382">
+    <state width="1868" height="331" key="GridCell.Tab.0.center/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385065" />
+    <state width="1868" height="331" key="GridCell.Tab.0.left" timestamp="1589366385064">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1868" height="331" key="GridCell.Tab.0.left/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589361163382" />
-    <state width="1868" height="331" key="GridCell.Tab.0.right" timestamp="1589361163384">
+    <state width="1868" height="331" key="GridCell.Tab.0.left/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385064" />
+    <state width="1868" height="331" key="GridCell.Tab.0.right" timestamp="1589366385066">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1868" height="331" key="GridCell.Tab.0.right/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589361163384" />
+    <state width="1868" height="331" key="GridCell.Tab.0.right/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385066" />
     <state x="344" y="151" key="SettingsEditor" timestamp="1589274458752">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="344" y="151" key="SettingsEditor/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589274458752" />
-    <state x="460" y="277" key="Vcs.Push.Dialog.v2" timestamp="1589360375688">
+    <state x="460" y="277" key="Vcs.Push.Dialog.v2" timestamp="1589378044385">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589360375688" />
+    <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589378044385" />
     <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137130964" />
     <state x="696" y="502" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589279145868">
       <screen x="0" y="0" width="1920" height="1200" />
@@ -244,9 +333,9 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="820" y="477" key="publish.login/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589291050595" />
-    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup" timestamp="1589285964215">
+    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup" timestamp="1589363672555">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589285964215" />
+    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589363672555" />
   </component>
 </project>

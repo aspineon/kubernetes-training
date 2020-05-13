@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: products-database-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: products-database
+  template:
+    metadata:
+      labels:
+        app: products-database
+    spec:
+      containers:
+        - image: postgres:12-alpine
+          name: postgres
+          envFrom:
+            - configMapRef:
+                name: products-config-map
+          ports:
+            - containerPort: 5432
+              name: postgres
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: volume
+      volumes:
+        - name: volume
+          persistentVolumeClaim:
+            claimName: products-volume-claim
