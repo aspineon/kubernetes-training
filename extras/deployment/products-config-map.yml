@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: products-config-map
 data:
-  CONFIGURATION_SERVER_URI: http://configuration-service:8888
+  CONFIGURATION_SERVER_URI: http://configuration-service
   ACTIVE_PROFILE: production
   POSTGRES_USER: admin
   POSTGRES_PASSWORD: admin
