@@ -113,14 +113,20 @@ kubectl delete all --all
 ```
 ## MetalLB
 ```
-kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/namespace.yaml
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/metallb.yaml
+# On first install only
+kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
 ```
 ```
 kubectl create -f metallb-config-map.yml
 ```
 ## Ingress 
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/baremetal/deploy.yaml
+```
+```
+kubectl get pods -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx --watch
 ```
 ```
 kubectl apply -f ingress-service.yml
