@@ -242,7 +242,7 @@ kubeadm phase certs all --apiserver-advertise-address=0.0.0.0 --apiserver-cert-e
 docker rm -f `docker ps -q -f 'name=k8s_kube-apiserver*'`
 systemctl restart kubelet
 ```
-- Opcjonalnie wyświetlenie tokenów```
+- Opcjonalnie wyświetlenie tokenów
 ```
 kubeadm token list
 ```
