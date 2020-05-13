@@ -29,7 +29,7 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1ODgyOTE1M
 
 ###
 
-POST http://localhost:8080/api/products
+POST http://localhost:9001/products
 Accept: application/json
 Content-Type: application/json
 
@@ -41,7 +41,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/api/products?nameFragment=Micro
+GET http://localhost:9001/products?nameFragment=Micro
 Accept: application/json
 Content-Type: application/json
 
