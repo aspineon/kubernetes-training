@@ -1,0 +1,40 @@
+{
+  "clusters": [
+    {
+      "nodes": [
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "node1"
+              ],
+              "storage": [
+                "192.168.1.11"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/loop0"
+          ]
+        },
+        {
+          "node": {
+            "hostnames": {
+              "manage": [
+                "node2"
+              ],
+              "storage": [
+                "192.168.1.12"
+              ]
+            },
+            "zone": 1
+          },
+          "devices": [
+            "/dev/loop0"
+          ]
+        }
+      ]
+    }
+  ]
+}
