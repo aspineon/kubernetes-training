@@ -142,3 +142,6 @@ sudo kubectl --kubeconfig /etc/kubernetes/admin.conf create -f heketi-storage.js
 ```
 kubectl delete all,service,jobs,deployment,secret --selector="deploy-heketi"
 ```
+```
+kubectl create -f heketi-deployment.json
+```
