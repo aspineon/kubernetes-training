@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: php-apache
-          image: landrzejewski/sqrt
+          image: k8s.gcr.io/hpa-example
           ports:
             - containerPort: 80
           resources:
@@ -22,7 +22,6 @@ spec:
               cpu: 500m
             requests:
               cpu: 200m
-
 ---
 apiVersion: v1
 kind: Service

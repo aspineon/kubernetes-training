@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c91cd4-24ab-403d-a970-421c77b0e3f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02-Core-elements/nginx-stateful-set.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-Autoscaler/sqrt-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sqrt/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sqrt/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-Storage/commands.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-Autoscaler/commands.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-Autoscaler/metrics-server.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-Core-elements/nginx-pod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Core-elements/nginx-pod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-Autoscaler/sqrt-deployment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/08-Autoscaler/sqrt-deployment.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +137,8 @@
       <workItem from="1589263779844" duration="9720000" />
       <workItem from="1589290832328" duration="206000" />
       <workItem from="1589291042099" duration="2837000" />
-      <workItem from="1589326251037" duration="34375000" />
+      <workItem from="1589326251037" duration="37478000" />
+      <workItem from="1589454433072" duration="2716000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <created>1576493064540</created>
@@ -272,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589444793990</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="compose">
+      <created>1589450282972</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1589450282974</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,54 +291,59 @@
     <option name="LAST_COMMIT_MESSAGE" value="compose" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="242" y="-1829" key="#Deployment" timestamp="1589442724013">
+    <state x="242" y="-1829" key="#Deployment" timestamp="1589452842556">
       <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
-    <state x="242" y="-1829" key="#Deployment/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589442724013" />
+    <state x="242" y="-1829" key="#Deployment/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589452842556" />
     <state x="460" y="184" key="#Deployment/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589379057797" />
     <state x="460" y="184" key="#Deployment/0.0.1920.1200@0.0.1920.1200" timestamp="1589250393237" />
-    <state x="202" y="-1859" key="#SSH_Configurations" timestamp="1589442722086">
+    <state x="202" y="-1859" key="#SSH_Configurations" timestamp="1589452841511">
       <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
-    <state x="202" y="-1859" key="#SSH_Configurations/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589442722086" />
+    <state x="202" y="-1859" key="#SSH_Configurations/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589452841511" />
     <state x="440" y="167" key="#SSH_Configurations/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589351745380" />
     <state x="440" y="167" key="#SSH_Configurations/0.0.1920.1200@0.0.1920.1200" timestamp="1588103108979" />
-    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589356296884">
-      <screen x="0" y="0" width="1920" height="1200" />
-    </state>
-    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589293389273" />
-    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.23.1366.745@0.0.1920.1200" timestamp="1589356296884" />
-    <state x="14" y="-2115" key="CommitChangelistDialog2" timestamp="1589444793687">
+    <state x="438" y="-1454" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589456752135">
       <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
-    <state x="14" y="-2115" key="CommitChangelistDialog2/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589444793687" />
+    <state x="438" y="-1454" key="#com.intellij.fileTypes.FileTypeChooser/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589456752135" />
+    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589293389273" />
+    <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.23.1366.745@0.0.1920.1200" timestamp="1589356296884" />
+    <state x="14" y="-2115" key="CommitChangelistDialog2" timestamp="1589450281845">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
+    </state>
+    <state x="14" y="-2115" key="CommitChangelistDialog2/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589450281845" />
     <state x="346" y="25" key="CommitChangelistDialog2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589379018703" />
     <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137128702" />
-    <state width="1868" height="331" key="GridCell.Tab.0.bottom" timestamp="1589366385067">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1868" height="331" key="GridCell.Tab.0.bottom" timestamp="1589454312270">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state width="1868" height="331" key="GridCell.Tab.0.bottom/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589454312270" />
     <state width="1868" height="331" key="GridCell.Tab.0.bottom/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385067" />
-    <state width="1868" height="331" key="GridCell.Tab.0.center" timestamp="1589366385065">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1868" height="331" key="GridCell.Tab.0.center" timestamp="1589454312268">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state width="1868" height="331" key="GridCell.Tab.0.center/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589454312268" />
     <state width="1868" height="331" key="GridCell.Tab.0.center/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385065" />
-    <state width="1868" height="331" key="GridCell.Tab.0.left" timestamp="1589366385064">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1868" height="331" key="GridCell.Tab.0.left" timestamp="1589454312267">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state width="1868" height="331" key="GridCell.Tab.0.left/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589454312267" />
     <state width="1868" height="331" key="GridCell.Tab.0.left/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385064" />
-    <state width="1868" height="331" key="GridCell.Tab.0.right" timestamp="1589366385066">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1868" height="331" key="GridCell.Tab.0.right" timestamp="1589454312269">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state width="1868" height="331" key="GridCell.Tab.0.right/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589454312269" />
     <state width="1868" height="331" key="GridCell.Tab.0.right/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589366385066" />
     <state x="10" y="-1888" key="SettingsEditor" timestamp="1589439818215">
       <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
     <state x="10" y="-1888" key="SettingsEditor/-678.-2160.3840.2160/0.23.1920.1177@-678.-2160.3840.2160" timestamp="1589439818215" />
     <state x="344" y="151" key="SettingsEditor/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589274458752" />
-    <state x="242" y="-1661" key="Vcs.Push.Dialog.v2" timestamp="1589444795659">
+    <state x="242" y="-1661" key="Vcs.Push.Dialog.v2" timestamp="1589450285992">
       <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
-    <state x="242" y="-1661" key="Vcs.Push.Dialog.v2/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589444795659" />
+    <state x="242" y="-1661" key="Vcs.Push.Dialog.v2/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589450285992" />
     <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589379020909" />
     <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137130964" />
     <state x="696" y="502" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589279145868">
