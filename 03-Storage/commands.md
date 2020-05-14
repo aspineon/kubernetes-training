@@ -58,7 +58,7 @@ kubectl create secret generic heketi-config-secret --from-file=./heketi.json
 ```
 kubectl create -f heketi-bootstrap.json
 ```
-- Instalacja klienta na Master
+- Instalacja klienta z Master
 ```
 wget https://github.com/heketi/heketi/releases/download/v9.0.0/heketi-client-v9.0.0.linux.amd64.tar.gz
 ```
@@ -78,7 +78,9 @@ kubectl describe pod deploy-heketi-7bcd7888b-4mjtn    (10.32.0.2)
 curl http://10.32.0.2:8080/hello
 ```
 ```
-export HEKTI_CLI_SERVER=http://10.32.0.2:8080
+export HEKETI_CLI_SERVER=http://10.32.0.2:8080
+export HEKETI_CLI_USER=admin
+export HEKETI_CLI_KEY="My Secret"
 ```
 ```
 nano topology.json
@@ -123,4 +125,20 @@ nano topology.json
         }
     ]
 }
+```
+```
+/usr/local/bin/heketi-cli topology load -- json=topology.json
+```
+```
+/usr/local/bin/heketi-cli volume create --durability=none --size=2 --replica=2
+```
+```
+/usr/local/bin/heketi-cli setup-openshift-heketi-storage --replica=2
+```
+```
+sudo kubectl --kubeconfig /etc/kubernetes/admin.conf create -f heketi-storage.json
+```
+- Z Admin
+```
+kubectl delete all,service,jobs,deployment,secret --selector="deploy-heketi"
 ```
