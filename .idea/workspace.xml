@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c91cd4-24ab-403d-a970-421c77b0e3f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/07-Network-policy/deny-all.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-Network-policy/dev-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-Network-policy/limit-to-app.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-Network-policy/pod-a.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-Network-policy/pod-b.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-Network-policy/test-pod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-Core-elements/nginx-stateful-set.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-Autoscaler/sqrt-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sqrt/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sqrt/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extras/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/extras/commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-Core-elements/nginx-pod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/02-Core-elements/nginx-pod.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +34,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/07-Network-policy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/02-Core-elements" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/02-Core-elements" />
       <recent name="$PROJECT_DIR$/07-Network-policy" />
       <recent name="$PROJECT_DIR$/extras/microservices-training/.mvn/wrapper" />
       <recent name="$PROJECT_DIR$/extras/microservices-training" />
       <recent name="$PROJECT_DIR$/06-Istio" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/sqrt" />
       <recent name="$PROJECT_DIR$/06-Istio" />
     </key>
   </component>
@@ -139,7 +137,7 @@
       <workItem from="1589263779844" duration="9720000" />
       <workItem from="1589290832328" duration="206000" />
       <workItem from="1589291042099" duration="2837000" />
-      <workItem from="1589326251037" duration="29365000" />
+      <workItem from="1589326251037" duration="34375000" />
     </task>
     <task id="LOCAL-00001" summary="compose">
       <created>1576493064540</created>
@@ -267,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589379018975</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="compose">
+      <created>1589444793990</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1589444793990</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,9 +300,10 @@
     </state>
     <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589293389273" />
     <state x="558" y="392" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200/-1366.23.1366.745@0.0.1920.1200" timestamp="1589356296884" />
-    <state x="346" y="25" key="CommitChangelistDialog2" timestamp="1589379018703">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="14" y="-2115" key="CommitChangelistDialog2" timestamp="1589444793687">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state x="14" y="-2115" key="CommitChangelistDialog2/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589444793687" />
     <state x="346" y="25" key="CommitChangelistDialog2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589379018703" />
     <state x="436" y="96" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137128702" />
     <state width="1868" height="331" key="GridCell.Tab.0.bottom" timestamp="1589366385067">
@@ -321,9 +327,10 @@
     </state>
     <state x="10" y="-1888" key="SettingsEditor/-678.-2160.3840.2160/0.23.1920.1177@-678.-2160.3840.2160" timestamp="1589439818215" />
     <state x="344" y="151" key="SettingsEditor/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589274458752" />
-    <state x="460" y="277" key="Vcs.Push.Dialog.v2" timestamp="1589379020909">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="242" y="-1661" key="Vcs.Push.Dialog.v2" timestamp="1589444795659">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state x="242" y="-1661" key="Vcs.Push.Dialog.v2/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589444795659" />
     <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589379020909" />
     <state x="460" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1200@0.0.1920.1200" timestamp="1588137130964" />
     <state x="696" y="502" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589279145868">
@@ -334,9 +341,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="820" y="477" key="publish.login/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589291050595" />
-    <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup" timestamp="1589363672555">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="404" y="-1858" width="1676" height="1858" key="search.everywhere.popup" timestamp="1589448681770">
+      <screen x="-678" y="-2160" width="3840" height="2160" />
     </state>
+    <state x="404" y="-1858" width="1676" height="1858" key="search.everywhere.popup/-678.-2160.3840.2160/0.0.1920.1200@-678.-2160.3840.2160" timestamp="1589448681770" />
     <state x="541" y="168" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1200/-1366.0.1366.768@0.0.1920.1200" timestamp="1589363672555" />
   </component>
 </project>

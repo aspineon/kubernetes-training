@@ -1,0 +1,90 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-1
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/volume-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-2
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/volume-2
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-3
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/volume-3
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: volume-4
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/volume-4
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: site-service
+spec:
+  selector:
+    app-name: site
+  ports:
+    - port: 80
+      targetPort: http
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: site
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app-name: site
+  serviceName: site-service
+  template:
+    metadata:
+      labels:
+        app-name: site
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
+              name: http
+  volumeClaimTemplates:
+    - metadata:
+        name: www
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+

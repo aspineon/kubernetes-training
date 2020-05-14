@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
     - name: nginx-server
-      image: trow.kube-public:31000/test/nginx:alpine
+      image: trow.default:31000/test/nginx:alpine
       ports:
         - containerPort: 80
