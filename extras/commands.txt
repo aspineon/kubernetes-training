@@ -20,10 +20,6 @@ RestAPI
   https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#proxy
   http://www.ethernetresearch.com/kubernetes/accessing-kubernetes-api-server-through-rest-apis/
 
-cluster HA
-    https://files.mycloud.com/home.php?brand=webfiles&seuuid=98926eb82818afd7c0b10907c9b6ae11&name=k8s-ha-cluster_4
-
-
 https://kubernetes.io/docs/tutorials/stateless-application/guestbook/
 https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/
 
@@ -35,3 +31,17 @@ https://www.manning.com/books/istio-in-action
 https://helion.pl/ksiazki/kubernetes-up-and-running-dive-into-the-future-of-infrastructure-2nd-edition-brendan-burns-joe-beda-kelsey-hightower,e_1bzr.htm
 
 https://www.icloud.com/iclouddrive/0GpIr5EbGvjRkSshDmgCV_n0Q#kubernetes
+
+Other:
+https://techbeacon.com/enterprise-it/47-advanced-tutorials-mastering-kubernetes
+https://kubernetes.io/blog
+https://engineering.opsgenie.com/advanced-kubernetes-objects-53f5e9bc0c28
+https://github.com/kelseyhightower/kubernetes-the-hard-way
+https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727
+https://github.com/ahmetb/kubernetes-network-policy-recipes
+https://github.com/freach/kubernetes-security-best-practice
+https://unofficial-kubernetes.readthedocs.io
+
+https://blog.container-solutions.com/installing-a-registry-on-kubernetes-quickstart
+https://asciinema.org/a/48HK88yR4rJw0QuHt2VdkuVZn
+https://github.com/alexellis/k8s-tls-registry

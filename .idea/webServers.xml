@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="9eb6e441-69fd-46a1-b912-1955ba1611c4" name="Admin" url="http://192.168.56.65">
-        <fileTransfer rootFolder="/home/k8s" accessType="SFTP" host="192.168.56.79" port="22" sshConfigId="e9a5e585-c793-4fb1-b20c-ebaa88661be6" sshConfig="k8s@192.168.56.79:22 password">
+        <fileTransfer rootFolder="/home/k8s" accessType="SFTP" host="192.168.56.84" port="22" sshConfigId="e9a5e585-c793-4fb1-b20c-ebaa88661be6" sshConfig="k8s@192.168.56.84:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
